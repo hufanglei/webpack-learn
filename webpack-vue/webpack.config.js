@@ -25,13 +25,14 @@ module.exports = {
             //limit 给定的值，是图片的大小，单位是byte，如果 我们引用的图片，大于或等于给定的limit值
             //则不会被转为base64格式的字符串，如果图片小于给定的limit的值，则会被转为base64字符串
             {test: /\.(ttf|eot|svg|woff|woff2)$/, use:['url-loader']}, //处理字体文件的loader
-            {test:/\.js$/,use:'babel-loader',exclude:/node_modules/}
+            {test:/\.js$/, use:'babel-loader',exclude:/node_modules/},
+            {test:/\.vue$/, use:'vue-loader'} //处理.vue文件的loader
         
         ]
     },
     resolve: {
         alias: { //修改 vue被导入时候的包的路径
-            "vue$":"vue/dist/vue.js"
+            // "vue$":"vue/dist/vue.js"
         }
     }
 }
