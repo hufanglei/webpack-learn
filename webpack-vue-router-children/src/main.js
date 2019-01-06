@@ -6,25 +6,8 @@ Vue.use(VueRouter)
 
 //导入app组件
 import app from './app.vue'
-//导入Account组件
-import account from './main/Account.vue'
-import goodslist from './main/GoodsList.vue'
-//导入 Account的两个子组件
-import login from './submain/login.vue'
-import register from './submain/register.vue'
-//3.创建一个viewrouter
-var router = new VueRouter({
-    routes:[
-        {path:'/account', 
-        component:account,
-         children:[
-            {path:'login', component: login},
-            {path:'register', component: register}
-         ]
-       },
-        {path:'/goodslist', component:goodslist} 
-    ]
-})
+//导入自定义路由模块
+import router from './router.js'
 var vm = new Vue({
     el:'#app',
     render:c=>c(app), //render会把 el指定的容器中，所有的容器都请客覆盖，
