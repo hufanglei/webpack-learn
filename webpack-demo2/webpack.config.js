@@ -24,7 +24,8 @@ module.exports = {
             {test: /\.(jpg|png|gif|bmp|jpeg)$/, use: 'url-loader?limit=5429&name=[hash:8]-[name].[ext]'},//处理图片路径的loader
             //limit 给定的值，是图片的大小，单位是byte，如果 我们引用的图片，大于或等于给定的limit值
             //则不会被转为base64格式的字符串，如果图片小于给定的limit的值，则会被转为base64字符串
-            {test: /\.(ttf|eot|svg|woff|woff2))$/, use:['url-loader']}, //处理字体文件的loader
+            {test: /\.(ttf|eot|svg|woff|woff2)$/, use:['url-loader']}, //处理字体文件的loader
+            {test:/\.js$/,use:'babel-loader',exclude:/node_modules/}
         
         ]
     }
