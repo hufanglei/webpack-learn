@@ -8,6 +8,7 @@
 <body>
 
 <div id="app">
+    <p>3333</p>
     <login></login>
 </div>
 
@@ -19,8 +20,12 @@
         el:'#app',
         data:{},
         methods:{},
-        components: {
-            login
+        // components: {
+        //     login
+        // }
+        render:function (createElements) { //createElements是一个方法，调用他，能够把指定的组件模板，渲染为 html结构
+            return createElements(login)
+            //注意: 这里 return 的结果，会替换要么中 el指定的那个 容器
         }
     });
 </script>
