@@ -10,6 +10,6 @@ http://naotu.baidu.com/file/5590852166afb29124a264ff30acdac8?token=6a644a1fd0378
 解决方法:
 https://blog.csdn.net/baidu_21349635/article/details/85937431
 - 1.删除所有的node_mudules
-- 2.清楚缓存 npm cache clean --force
+- 2.清楚 缓存 npm cache clean --force
 - 3.修改package.jsonhttps://blog.csdn.net/baidu_21349635/article/details/85937431
 - 4. 执行npm run dev测试
