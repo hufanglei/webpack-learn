@@ -43,7 +43,23 @@ var vm = new Vue({
     //     //vm实例中render函数可以实现
     //     return createElements(login)
     // }
+    
+    //简写
     render: c =>  c(login)
         
    
 })
+
+//总结梳理: webpack 中如何使用vue
+//1. 安装vue的包， cnpm i vue -S
+//2. 由于在webpack中推荐使用.vue 这个组件模板文件定义组件，所以，需要安装能解析这种文件的loader/
+// cnpm i vue-loader vue-template-compiler -D
+// 3.在 main.js中，导入vue，模块，import Vue from ‘vue’
+//4. 定义一个.vue 结束的组件，其中 组件有三部分组成: template script style
+//5. 使用import 导入这个组件
+//6. 创建vm的实例 var vm = new  Vue({
+//     el:'#app',
+//     render:c =>c(login)
+// })
+//7.在页面中创建一个id为app的div元素，作为我们的 vm实例要控制的区域
+
