@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ffcb886-bee4-4226-8bba-c82524098567" name="Default Changelist" comment="使用vue实例的render方法渲染组件.">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webpack-demo1" beforeDir="false" afterPath="$PROJECT_DIR$/../webpack-demo1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01在页面中渲染基本的组件.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/vue-resource.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/vue-router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/vue.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/login.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,11 +29,11 @@
     <session id="-542157101">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -178,9 +166,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,6 +195,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,6 +240,7 @@
       <workItem from="1546773707533" duration="106000" />
       <workItem from="1546773843201" duration="144000" />
       <workItem from="1546775652605" duration="158000" />
+      <workItem from="1546782596633" duration="628000" />
     </task>
     <task id="LOCAL-00001" summary="01在页面中渲染基本的组件">
       <created>1546772841666</created>
@@ -271,7 +260,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2043000" />
+    <option name="totallyTimeSpent" value="2671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -291,7 +280,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Statistic" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.537037" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32954547" />
       <window_info anchor="right" id="Palette" order="0" />
@@ -303,7 +292,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="9" visible="true" weight="0.3297587" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="9" visible="true" weight="0.3344504" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
