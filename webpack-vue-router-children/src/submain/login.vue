@@ -9,4 +9,8 @@
 <script>
 </script>
 
-<style></style>
+<style scoped>
+div{
+    color: red;
+}
+</style>
