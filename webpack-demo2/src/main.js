@@ -34,7 +34,7 @@ console.log(Person.info);
 //所以，在写.babelrc配置的时候，必须符合json语法规范，不能写注释，字符串必须用双引号
 //3.1 在 .babelrc写如下的配置 presets翻译成语法的意思
 // {
-//     "presets": [],
+//     "presets": ["env","stage-0"],
 //     "plugins": ["transform-runtime"]
 // }
 
