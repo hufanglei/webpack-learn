@@ -2,9 +2,11 @@
     <div>
         <h1>这是App组件</h1>   
         <mt-button type="default" @click="show">default</mt-button>
-        <mt-button type="primary" size="large" icon="back">primary</mt-button>
-        <mt-button type="primary" size="normal" plain>primary</mt-button>
-        <mt-button type="primary" size="small" disabled>primary</mt-button>
+        <mt-button type="danger" size="large" icon="back">primary</mt-button>
+        <mt-button type="danger" size="normal" plain>primary</mt-button>
+        <mt-button type="danger" size="small" disabled>primary</mt-button>
+
+        <mybtn type="primary">12345</mybtn>
         <router-link to="account">Account</router-link>
         <router-link to="goodslist">Goodslist</router-link>
         <router-view></router-view>     

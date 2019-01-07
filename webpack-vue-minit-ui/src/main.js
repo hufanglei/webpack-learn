@@ -10,11 +10,17 @@ import './css/app.css'
 
 //导入所有的mint-ui
 //导入Mint-UI
-import MintUI from 'mint-ui'
+// import MintUI from 'mint-ui'
 
-//这里可以省略 node_modules 这一层目录
-import 'mint-ui/lib/style.css'
-Vue.use(MintUI)
+// //这里可以省略 node_modules 这一层目录
+// import 'mint-ui/lib/style.css'
+// Vue.use(MintUI)
+
+//按需导入 Mint-UI组件
+import { Button } from 'mint-ui'
+//Vue.component('mybtn', Button)
+Vue.component(Button.name, Button)
+console.log(Button.name)
 
 //导入app组件
 import app from './app.vue'
