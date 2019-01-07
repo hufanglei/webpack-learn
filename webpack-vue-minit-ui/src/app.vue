@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>这是App组件</h1>   
-        <mt-button type="default">default</mt-button>
+        <mt-button type="default" @click="show">default</mt-button>
         <mt-button type="primary" size="large" icon="back">primary</mt-button>
         <mt-button type="primary" size="normal" plain>primary</mt-button>
         <mt-button type="primary" size="small" disabled>primary</mt-button>
@@ -12,10 +12,39 @@
 </template>
 
 <script>
+import { Toast } from 'mint-ui'
+
 export default {
-    
+    data(){
+         return  {
+             toastInstance: null
+         }        
+    },
+    created() {
+        this.getList()
+    },
+    methods: {
+        getList(){
+            this.show();
+            setTimeout(() => {
+                this.toastInstance.close();
+            }, 3000);
+        },
+        show(){
+            this.toastInstance = Toast({
+                message: 'Upload Complete',
+                position: 'bottom',
+                duration: -1,
+                iconClass: 'glyphicon glyphicon-heart',
+                className: 'mytoast'
+                });
+        }
+    },
+
 }
 </script>
-<style>
-    
+<style scoped>
+    .red{
+        background: red;
+    }
 </style>

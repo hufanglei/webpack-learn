@@ -4,9 +4,14 @@ import VueRouter from 'vue-router'
 //2.手动安装VueRouter
 Vue.use(VueRouter)
 
+//导入bootstrap样式
+import 'bootstrap/dist/css/bootstrap.css'
+import './css/app.css'
+
 //导入所有的mint-ui
 //导入Mint-UI
 import MintUI from 'mint-ui'
+
 //这里可以省略 node_modules 这一层目录
 import 'mint-ui/lib/style.css'
 Vue.use(MintUI)
