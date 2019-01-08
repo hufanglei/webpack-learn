@@ -1,3 +1,6 @@
 /webpack-demo1/node_modules
 /webpack-demo2/node_modules
 /*/node_modules
+.idea
+.vscode
+.git
