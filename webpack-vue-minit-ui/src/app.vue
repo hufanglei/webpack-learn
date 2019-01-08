@@ -4,7 +4,7 @@
         <mt-button type="default" @click="show">default</mt-button>
         <mt-button type="danger" size="large" icon="back">primary</mt-button>
         <mt-button type="danger" size="normal" plain>primary</mt-button>
-        <mt-button type="danger" size="small" disabled>primary</mt-button>
+        <mt-button type="danger " size="small" disabled>primary</mt-button>
 
         <mybtn type="primary">12345</mybtn>
         <router-link to="account">Account</router-link>
