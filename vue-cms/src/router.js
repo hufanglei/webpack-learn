@@ -10,6 +10,7 @@ import search from './components/tabbar/SearchContainer.vue'
 //3.创建一个viewrouter
 var router = new VueRouter({
     routes:[
+        {path:"/",redirect:home},
         {path:"/home",component:home},
         {path:"/member",component:member},
         {path:"/shopcar",component:shopcar},
