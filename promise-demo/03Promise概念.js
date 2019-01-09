@@ -14,6 +14,36 @@
 //var promise = new Promise()
 
 //这是一个具体的异步操作，使用function指定一个具体的异步操作
-var promise = new Promise(function(){
-    //这个function 内部写的就是具体的异步操作
+const fs = require('fs')
+
+//每当new一个promise实例的时候，就会立即 执行这个 异步操作的代码
+// var promise = new Promise(function(){
+//     //这个function 内部写的就是具体的异步操作
+//     fs.readFile('./files/2.txt','utf-8',(err,dataStr)=>{
+//         if(err) throw err
+//         console.log(dataStr)
+//     })
+// })
+
+//初衷: 给路径，返回读取到的内容
+function getFileByPath(fpath){
+    var promise = new Promise(function(resolve, reject){
+        //这个function 内部写的就是具体的异步操作
+        fs.readFile(fpath,'utf-8',(err,dataStr)=>{
+            // if(err) throw err            
+            // console.log(dataStr)
+            if(err)return reject(err)
+            resolve(dataStr)
+        })
+    })
+    return promise
+  
+}
+
+var p = getFileByPath('./files/2.txt')
+p.then(function(data){
+    console.log(data + '----')
+},function(err){
+    console.log(err.message)
 })
+
