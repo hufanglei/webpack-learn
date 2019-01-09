@@ -3,6 +3,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 //2.手动安装VueRouter
 Vue.use(VueRouter)
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
+
 
 //导入bootstrap样式
 import './lib/css/mui.css'
@@ -26,6 +29,7 @@ Vue.component(SwipeItem.name, SwipeItem)
 import app from './app.vue'
 //导入自定义路由模块
 import router from './router.js'
+//
 var vm = new Vue({
     el:'#app',
     render:c=>c(app), //render会把 el指定的容器中，所有的容器都请客覆盖，

@@ -1,9 +1,7 @@
 <template>
     <div class="app-container">
        <mt-header fixed title="莒县对外劳务服务">
-            <router-link to="/" slot="left">
-                <mt-button icon="back">back</mt-button>
-              </router-link>
+            
        </mt-header>
         <!--顶部Header区域-->
 
