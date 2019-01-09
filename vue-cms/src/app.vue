@@ -5,11 +5,10 @@
                 <mt-button icon="back">back</mt-button>
               </router-link>
        </mt-header>
-       <h1>fsfdsdf </h1>
         <!--顶部Header区域-->
 
         <!--中间的 路由 router-view 区域-->
- 
+        <router-view></router-view>
         <!--底部的 Tabbar 区域-->
         <nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item " to="/home">
