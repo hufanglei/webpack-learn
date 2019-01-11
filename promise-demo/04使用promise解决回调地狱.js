@@ -76,7 +76,8 @@ getFileByPath('./files/11.txt')
 .then(function(data){
     console.log(data+'---')
 })
-.catch(function(err){
+.catch(function(err){//catch的作用，如果前面有任何的promise的执行失败，则立即终止
+    //所有promise的执行，并马上进去catch去处理promise中跑出的异常
     console.log(err.message);
 })
 console.log('okokok')
