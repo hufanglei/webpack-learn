@@ -39,9 +39,8 @@ function getFileByPath(fpath){
     return promise
   
 }
-
-var p = getFileByPath('./files/2.txt')
-p.then(function(data){
+getFileByPath('./files/2.txt')
+.then(function(data){
     console.log(data + '----')
 },function(err){
     console.log(err.message)
