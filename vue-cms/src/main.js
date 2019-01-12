@@ -3,8 +3,19 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 //2.手动安装VueRouter
 Vue.use(VueRouter)
+
+//导入格式化时间的插件
+import moment from 'moment'
+//定义全局过滤器
+Vue.filter('dateFormat',function (dataStr,pattern='yyyy-MM-dd HH:mm:ss') {
+    moment(dataStr).format(pattern)
+})
+
+
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
+//设置请求的根路径
+Vue.http.options.root='http://vue.studyit.io'
 
 
 //导入bootstrap样式
