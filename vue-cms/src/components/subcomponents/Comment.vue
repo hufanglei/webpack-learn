@@ -94,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <mt-button type="danger" size="large" plain>加载更多</mt-button>
+        <mt-button type="danger" size="large" plain @click="getMore">加载更多</mt-button>
 
     </div>
 </template>
@@ -116,13 +116,18 @@
                 this.$http.get('api/getComments/:'+this.id+'?pageindex='+this.pageIndex)
                     .then(result =>{
                         if(result.body.status === 0){
-                            this.comments = result.body.message;
+                            //每当获取新评论的时候，不要把老数据清空覆盖，而是应该以老数据拼接上新数据
+                            this.comments = this.comments.concat(result.body.message);
                         }else{
                             Toast('获取评论失败!')
                         }
                     })
 
             },
+            getMore(){ //加载更多
+                this.pageIndex ++;
+                this.getComments();
+            }
 
         },
         props:["id"]
