@@ -31,10 +31,11 @@ import './lib/css/icons-extra.css'
 // Vue.use(MintUI)
 
 //按需导入 Mint-UI组件
-import { Header, Swipe, SwipeItem } from 'mint-ui'
+import { Header, Swipe, SwipeItem,Button} from 'mint-ui'
 Vue.component(Header.name, Header)
 Vue.component(Swipe.name, Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
+Vue.component(Button.name, Button)
 
 //导入app组件
 import app from './app.vue'

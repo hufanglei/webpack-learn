@@ -9,12 +9,14 @@
        </p>
        <hr>
        <div class="content" v-html="newsinfo.content"></div>
+       <comment-box></comment-box>
    </div>
 </template>
 
 
 <script>
     import {Toast} from 'mint-ui';
+    import comment from '../subcomponents/Comment.vue'
 
     export  default {
         data(){
@@ -34,12 +36,17 @@
                     }
                 })
             }
+        },
+        components:{
+            'comment-box':comment
         }
+
+
 
     }
 </script>
 
-<!--scoped-->
+<!--scoped 去掉scoped img图片显示 就正常了-->
 <style lang="scss" scoped>
     .newinfo-container{
         padding:0 4px;
