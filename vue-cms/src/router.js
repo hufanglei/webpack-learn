@@ -8,6 +8,7 @@ import shopcar from './components/tabbar/ShopCarContainer.vue'
 import search from './components/tabbar/SearchContainer.vue'
 import NewsList from './components/news/NewsList.vue'
 import Newsinfo from './components/news/Newsinfo.vue'
+import photoList from './components/photos/PhotoList.vue'
 
 //3.创建一个viewrouter
 var router = new VueRouter({
@@ -19,6 +20,7 @@ var router = new VueRouter({
         {path:"/search",component:search},
         {path:"/home/newslist",component:NewsList},
         {path:"/home/NewsInfo/:id",component:Newsinfo},
+        {path:"/home/photoList",component:photoList},
 
     ],
     linkActiveClass: 'mui-active' //覆盖默认的路由高亮的类。默认的类叫做 router-link-active

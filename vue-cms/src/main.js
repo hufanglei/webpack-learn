@@ -16,6 +16,8 @@ import VueResource from 'vue-resource'
 Vue.use(VueResource)
 //设置请求的根路径
 Vue.http.options.root='http://vue.studyit.io'
+Vue.http.options.emulateJSON = true;
+
 
 
 //导入bootstrap样式
