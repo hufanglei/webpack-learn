@@ -29,7 +29,7 @@
 </template>
 
 <script>
-    import mui from '../../lib/js/mui/mui.js';
+    import mui from '../../lib/js/mui/mui.min.js';
 
     export default {
         data(){
