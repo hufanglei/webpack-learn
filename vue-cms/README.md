@@ -93,3 +93,12 @@
    必须要等Dom元素加载完毕，所以 我们把初始化滑动条的代码搬到了 mounted 生命周期函数中     
 6. 当滑动条 调试Ok后，发现， tabbar 无法正常工作了，这时候，我们需要把 每个tabbar按钮的样式中的 'mui-tab-item'
    重新改下名字 
+7.获取  所有分类，并渲染分类列表
+
+## vuex总结
+1. state总的数据，不能直接修改，如果想要修改，必须通过 mutations
+2. 如果组件想要直接 从 state 上获取数据，需要 this.$store.state ***
+3. 如果 组件，想要修改数据，必须使用 mutations提供的方法 ，需要通过this.$store.state ***
+4. 如果 store中 state上的数据，在对外提供的时候，需要做一层包装，那么，推荐使用getter，
+如果需要geters，则用 this.$state.getters. ***
+   

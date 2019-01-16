@@ -1,8 +1,21 @@
 import Vue from 'vue'
 //1.导入 vue-router包
 import VueRouter from 'vue-router'
+import Vuex from 'vuex'
 //2.手动安装VueRouter
 Vue.use(VueRouter)
+Vue.use(Vuex)
+
+const store = new Vuex.Store({
+    state: {
+        count: 0
+    },
+    mutations: {
+        increment (state) {
+            state.count++
+        }
+    }
+})
 
 //导入格式化时间的插件
 import moment from 'moment'
@@ -33,11 +46,14 @@ import './lib/css/icons-extra.css'
 // Vue.use(MintUI)
 
 //按需导入 Mint-UI组件
-import { Header, Swipe, SwipeItem,Button} from 'mint-ui'
-Vue.component(Header.name, Header)
-Vue.component(Swipe.name, Swipe)
-Vue.component(SwipeItem.name, SwipeItem)
-Vue.component(Button.name, Button)
+// import { Header, Swipe, SwipeItem,Button} from 'mint-ui'
+// Vue.component(Header.name, Header)
+// Vue.component(Swipe.name, Swipe)
+// Vue.component(SwipeItem.name, SwipeItem)
+// Vue.component(Button.name, Button)
+import MintUI from 'mint-ui'
+Vue.use(MintUI)
+import 'mint-ui/lib/style.css'
 
 //导入app组件
 import app from './app.vue'
@@ -48,7 +64,8 @@ var vm = new Vue({
     el:'#app',
     render:c=>c(app), //render会把 el指定的容器中，所有的容器都请客覆盖，
     //不要把 路由的 router-view 和router-link 直接写到el控制的元素中
-    router //4.将路由对象挂载到vm上 
+    router, //4.将路由对象挂载到vm上
+    store
 })
 
 

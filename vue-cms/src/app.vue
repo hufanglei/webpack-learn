@@ -1,7 +1,9 @@
 <template>
         <div class="app-container">
            <mt-header fixed title="莒县对外劳务服务">
-                
+               <span slot="left" @click="goBack" v-show="flag">
+                   <mt-button icon="back">返回</mt-button>
+               </span>
            </mt-header>
             <!--顶部Header区域-->
     
@@ -32,9 +34,37 @@
     </template>
     
     <script>
-        
+        export default{
+            data(){
+                return {
+                    flag:false
+                }
+            },
+            created(){
+                this.flag = $route.path=== '/home'? false : true;
+            },
+            methods:{
+                goBack(){
+                   this.$router.go('-1');
+                }
+            },
+            watch:{
+                '$route.path':function (newVal) {
+                    if(newVal === '/home'){
+                        this.flag = false
+                    }else{
+                        this.flag = true
+                    }
+
+                }
+            }
+
+        }
     </script>
     <style lang="scss" scoped>
+        .mint-header{
+            z-index: 99;
+        }
       .app-container{
           padding-top: 40px;
           padding-bottom: 50px;

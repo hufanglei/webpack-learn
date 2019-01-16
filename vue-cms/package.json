@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --port 3000  --hot"
+    "dev": "webpack-dev-server --open --port 3000  --hot --host 192.168.10.155"
   },
   "keywords": [],
   "author": "",
@@ -39,6 +39,7 @@
     "moment": "^2.23.0",
     "vue": "^2.5.21",
     "vue-resource": "^1.5.1",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.2",
+    "vuex": "^3.0.1"
   }
 }
